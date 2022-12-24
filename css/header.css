@@ -1,0 +1,43 @@
+.header {
+  max-width: 1200px; /* Tamanho Máximo*/
+  margin: 0% auto; /* Alinha ao centro quando tem tamanho maximo */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 140px;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.header-menu a {
+  font-size: 1.125rem;
+  line-height: 1.3;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #141414;
+  display: block;
+}
+
+@media (max-width: 1300px) {
+  .header {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .header a {
+    background: #eeeeee;
+    border-radius: 4px;
+  }
+}

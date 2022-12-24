@@ -1,0 +1,136 @@
+.experiencia {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 120px;
+}
+
+.experiencia .subtitulo {
+  color: #e0e0e0;
+}
+
+.experiencia-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 50ch;
+  color: #525252;
+}
+
+.experiencia-texto strong {
+  color: #141414;
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.072);
+  border-radius: 4px;
+  position: relative;
+  gap: 10px 25px;
+  margin-bottom: 40px;
+}
+
+.empresa-ano {
+  width: 100px;
+  position: absolute;
+  top: 20px;
+  left: -140px;
+  color: #525252;
+  font-size: 0.875rem;
+  text-align: right;
+}
+
+.empresa::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(89.9deg, #66c9cf 0%, #61b3c5 99.83%);
+  position: absolute;
+  top: 20px;
+  left: -4px;
+}
+
+.empresa-titulo {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.empresa-texto {
+  font-size: 0.875rem;
+  color: #525252;
+  line-height: 1.4;
+  max-width: 50ch;
+}
+
+.empresa-habilidade {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.empresa-habilidade li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  background: #fff;
+  padding: 5px 10px;
+}
+
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .experiencia .subtitulo {
+    color: #141414;
+  }
+
+  .experiencia-texto {
+    font-size: 1.125rem;
+    max-width: initial;
+  }
+
+  .empresa-ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+    background: #fff;
+    padding: 5px 10px;
+    display: block;
+    justify-self: start;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 500px) {
+  .empresa {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .empresa-texto {
+    padding: 0%;
+  }
+
+  .experiencia-texto {
+    padding: 0%;
+  }
+
+  .formacao-texto {
+    padding: 0%;
+    font-size: 1.125rem;
+  }
+
+  .formacao-container {
+    gap: 40px !important;
+  }
+}
